@@ -15,14 +15,14 @@ with the respective names.
 Dependencies
 ------------
 
-The basic syntax is not that different from Markdown, but it also
-has many more powerful features that Markdown doesn't have. We aren't
-taking advantage of those yet though.
+ToDo
 
 Installation
 ------------
 
-Installation
+ToDo
+
+Configuration
 ------------
 Just change your preferencies at the very beginning of the script to connect to your LDAP server.
 Run script with cron.

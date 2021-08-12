@@ -29,7 +29,7 @@ SEARCH_GROUPFILTER = '(objectClass=group)'
 SEARCH_USERS_IN_GROUP = '(&(objectCategory=person)\
                         (objectClass=user)\
                         (!(userAccountControl:1.2.840.113556.1.4.803:=2))\
-                        (memberOf={GROUP}))'
+                        (memberOf:1.2.840.113556.1.4.1941:={GROUP}))'
 
 
 def query_ldap(ldap_connection, basedn, filter_, attributes=None, scope=SEARCH_SCOPE):
