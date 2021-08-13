@@ -18,12 +18,10 @@ Dependencies
 Some libraries are required to build python-ldap module during installatuion with Poetry.
 For Debian they are as follows:
 
-apt install python3-dev libsasl2-dev libldap2-dev libssl-dev
+sudo apt install python3-dev libsasl2-dev libldap2-dev libssl-dev
 
 Installation
 ============
-
-sudo su -
 
 git clone https://github.com/nsxsnx/py-ldap_lists_4_exim.git
 
@@ -36,12 +34,11 @@ Configuration
 
 Just change your preferencies at the very beginning of the script to connect to your LDAP server.
 
-Run script with cron:
+Run script with cron as root:
 
-crontab -e
+sudo crontab -e
 
 Add line:
 
 07 01 * * * cd /root/py-ldap_list_4_exim && /usr/local/bin/poetry run python3 ./ldap_lists_4_exim/ldap_lists_4_exim.py
-
 
