@@ -12,7 +12,7 @@ from os.path import join
 import ldap  # pylint: disable=E0401
 
 # Logging preferencies:
-LOGFILE = '/var/log/get_mail_groups'
+LOGFILE = '/var/log/ldap_lists_4_exim'
 LOGLEVEL = log.WARNING
 # Exim preferencies:
 EXIM_CONFIG_PATH = '/tmp'
@@ -90,7 +90,7 @@ def main():  # pylint: disable=C0116
         log.debug('Writing data to file: %s', filename)
         with open(filename, 'w') as file_:
             for mail in sorted(value):
-                file_.write(f'{mail}\n')
+                file_.write('{}\n'.format(mail))
         log.debug('Done')
     ldap_connection.unbind_s()
     return 0

@@ -15,12 +15,18 @@ with the respective names.
 Dependencies
 ------------
 
-ToDo
+Some libraries are required to build python-ldap module during installatuion with Poetry.
+For Debian they are as follows:
+apt install python3-dev libsasl2-dev libldap2-dev libssl-dev
 
 Installation
 ------------
 
-ToDo
+sudo su -
+mkdir -p /var/log/ldap_lists_4_exim
+git clone https://github.com/nsxsnx/py-ldap_lists_4_exim.git
+cd py-ldap_lists_4_exim/
+poetry install
 
 Configuration
 ------------
