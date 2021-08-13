@@ -25,8 +25,6 @@ Installation
 
 sudo su -
 
-mkdir -p /var/log/ldap_lists_4_exim
-
 git clone https://github.com/nsxsnx/py-ldap_lists_4_exim.git
 
 cd py-ldap_lists_4_exim/

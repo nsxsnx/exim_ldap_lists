@@ -12,7 +12,7 @@ from os.path import join
 import ldap  # pylint: disable=E0401
 
 # Logging preferencies:
-LOGFILE = '/var/log/ldap_lists_4_exim'
+LOGFILE = '/var/log/ldap_lists_4_exim.log'
 LOGLEVEL = log.WARNING
 # Exim preferencies:
 EXIM_CONFIG_PATH = '/tmp'
