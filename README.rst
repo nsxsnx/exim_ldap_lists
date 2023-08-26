@@ -40,5 +40,5 @@ sudo crontab -e
 
 Add line:
 
-07 01 * * * cd /root/py-ldap_list_4_exim && /usr/local/bin/poetry run python3 ./ldap_lists_4_exim/ldap_lists_4_exim.py
+07 01 * * * cd /root/exim-ldap_lists && /usr/local/bin/poetry run python3 ./exim_ldap_lists/ldap_lists_4_exim.py
 
