@@ -23,9 +23,9 @@ sudo apt install python3-dev libsasl2-dev libldap2-dev libssl-dev
 Installation
 ============
 
-git clone https://github.com/nsxsnx/py-ldap_lists_4_exim.git
+git clone https://github.com/nsxsnx/exim_ldap_lists.git
 
-cd py-ldap_lists_4_exim/
+cd exim_ldap_lists/
 
 poetry install
 
